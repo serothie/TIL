@@ -8,6 +8,6 @@
 # Category
 ## Ⅰ. HTML/CSS/JavaScript
   ### 3. JavaScript
-  * [Danfo.js 개요](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
+  * [Danfo.js : JavaScript에서 자료 다루기](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
 ## Python
 ## Algorithm
