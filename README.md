@@ -7,6 +7,8 @@
 
 # Category
 ## Ⅰ. HTML/CSS/JavaScript
+  ### 1. HTML
+  ### 2. CSS
   ### 3. JavaScript
   * [Danfo.js : JavaScript에서 자료 다루기](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
 ## Python
