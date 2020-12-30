@@ -8,6 +8,7 @@
 # Category
 ## Ⅰ. HTML/CSS/JavaScript
   ### 1. HTML
+  * [HTML 개요 및 Inline VS Block](https://github.com/serothie/TIL/blob/main/html/201230.md)
   ### 2. CSS
   ### 3. JavaScript
   * [Danfo.js : JavaScript에서 자료 다루기](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
