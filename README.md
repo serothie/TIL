@@ -13,5 +13,7 @@
   * [CSS 개요 및 레이아웃](https://github.com/serothie/TIL/blob/main/css/201231.md)
   ### 3. JavaScript
   * [Danfo.js : JavaScript에서 자료 다루기](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
-## Python
-## Algorithm
+## Ⅱ. Python
+## Ⅲ. Algorithm
+## Ⅳ. Linux
+## Ⅴ. 
