@@ -13,6 +13,7 @@
   * [CSS 개요 및 레이아웃](https://github.com/serothie/TIL/blob/main/css/201231.md)
   * [CSS MediaQuery : 반응형 웹사이트](https://github.com/serothie/TIL/blob/main/css/210101.md)
   ### 3. JavaScript
+  * [JavaScript 개요 및 제이쿼리](https://github.com/serothie/TIL/blob/main/JavaScript/210102.md)
   * [Danfo.js : JavaScript에서 자료 다루기](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
 ## Ⅱ. Python
 ## Ⅲ. Algorithm
