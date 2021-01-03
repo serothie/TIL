@@ -12,7 +12,7 @@
   * [CSS MediaQuery : 반응형 웹사이트](https://github.com/serothie/TIL/blob/main/css/210101.md)
   * [JavaScript 개요 및 제이쿼리](https://github.com/serothie/TIL/blob/main/JavaScript/210102.md)
   * [Danfo.js : JavaScript에서 자료 다루기](https://github.com/serothie/TIL/blob/main/JavaScript/201229.md)
-  * [Vanilla JS : Google Momentum 구현 및 DOM, Json, API](https://github.com/serothie/TIL/tree/main/JavaScript/210103)
+  * [Vanilla JS Project 1 : Google Momentum 구현 및 DOM, Json, API](https://github.com/serothie/TIL/tree/main/JavaScript/210103)
 ## Ⅱ. Python
 ## Ⅲ. Algorithm
 ## Ⅳ. Linux
