@@ -1,4 +1,4 @@
-# Vanilla JS Project 1 - Google Momentum Clone Coding
+# Vanilla JS Project 1 - Momentum Clone Coding
 
 ## Ⅰ. Introduction
 > * Vanilla JS 기반 Google Momentum Clone Coding
