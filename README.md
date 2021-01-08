@@ -24,6 +24,8 @@
 
 ## Ⅲ. Linux
 
+- [Linux 기초 : Welcome To Linux](https://github.com/serothie/TIL/blob/main/linux/210108.md)
+
 ## Ⅳ. Git
 
 ## Ⅴ. Database
