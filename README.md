@@ -33,3 +33,5 @@
 - [Git : 버전 관리 및 협업 시스템](https://github.com/serothie/TIL/blob/main/git/210109.md)
 
 ## Ⅴ. Database
+
+- [DataBase : SQL 기초 및 DML](https://github.com/serothie/TIL/blob/main/database/210112.md)
