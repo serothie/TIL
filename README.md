@@ -21,6 +21,7 @@
 ## Ⅱ. Algorhitm & Python
 
 - [Brute Force Algorhitm & Python Itertools](https://github.com/serothie/TIL/blob/main/algorhitm/210106.md)
+- [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
 
 ## Ⅲ. Linux
 
