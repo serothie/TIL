@@ -22,6 +22,7 @@
 
 - [Brute Force Algorhitm & Python Itertools](https://github.com/serothie/TIL/blob/main/algorhitm/210106.md)
 - [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
+- [Divide and Conquer & Sieve of Eratosthenes](https://github.com/serothie/TIL/blob/main/algorhitm/210115.md)
 
 ## Ⅲ. Linux
 
