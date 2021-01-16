@@ -23,6 +23,7 @@
 - [Brute Force Algorhitm & Python Itertools](https://github.com/serothie/TIL/blob/main/algorhitm/210106.md)
 - [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
 - [Sieve of Eratosthenes, Divide and Conquer](https://github.com/serothie/TIL/blob/main/algorhitm/210115.md)
+- [Python 기초 프로그래밍 1 : 기본 문법 보충 정리](https://github.com/serothie/TIL/blob/main/python/210116.md)
 
 ## Ⅲ. Linux
 
