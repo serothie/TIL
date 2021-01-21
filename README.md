@@ -43,3 +43,7 @@
 ## Ⅴ. Database
 
 - [DataBase : SQL 기초 및 DML](https://github.com/serothie/TIL/blob/main/database/210112.md)
+
+## Ⅵ. Backend
+
+- [Flask 입문 : HTTP method, REST, URL building](https://github.com/serothie/TIL/blob/main/flask/210122.md)
