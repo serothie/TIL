@@ -50,3 +50,4 @@
 - [Flask 입문 1 : HTTP method, REST, URL building](https://github.com/serothie/TIL/blob/main/flask/210122.md)
 - [Flask 입문 2 : HTTP method, REST, URL building](https://github.com/serothie/TIL/blob/main/flask/210123.md)
 - [Flask 입문 3 : Flask & RDB with sqlite3](https://github.com/serothie/TIL/blob/main/flask/210123.md)
+- [Flask 입문 4 : Flask with SQLAlchemy](https://github.com/serothie/TIL/blob/main/flask/210127.md)
