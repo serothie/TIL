@@ -59,4 +59,4 @@
 
 - [React 구동과 JSX, Element Readering](https://github.com/serothie/TIL/blob/main/react/210202.md)
 - [React Component & ES6 문법 알아보기](https://github.com/serothie/TIL/blob/main/react/210203.md)
-- [React Component / State & Props]()
+- [React Component / State & Props](https://github.com/serothie/TIL/blob/main/react/210205.md)
