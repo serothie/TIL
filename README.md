@@ -19,16 +19,24 @@
 - [Vanilla JS Project 1 : Momentum 구현 및 DOM, Json, API](https://github.com/serothie/TIL/tree/main/JavaScript/210103)
 - [Vanilla JS Project 2 : PaintJS(그림판)와 CanvasRenderingContext2D](https://github.com/serothie/TIL/tree/main/JavaScript/210104)
 
-## Ⅱ. Algorhitm & Python
+## Ⅱ. Python, Algorithm & Data Structure
 
-- [Brute Force Algorhitm & Python Itertools](https://github.com/serothie/TIL/blob/main/algorhitm/210106.md)
-- [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
-- [Sieve of Eratosthenes, Divide and Conquer](https://github.com/serothie/TIL/blob/main/algorhitm/210115.md)
+### Python
+
 - [Python 기초 프로그래밍 1 : 기본 문법 보충 정리](https://github.com/serothie/TIL/blob/main/python/210116.md)
 - [Python 기초 프로그래밍 2 : 함수, 클래스, 정규표현식](https://github.com/serothie/TIL/blob/main/python/210117.md)
 - [Python Crawling 1 : 크롤링 기초](https://github.com/serothie/TIL/blob/main/python/210118.md)
 - [Python Crawling 2 : 코로나, 주가 데이터 크롤링](https://github.com/serothie/TIL/commit/468116c4fe82c1dbd632eb111a7d2831a6083fa8)
+- [Python String Manipulation]()
+
+### Algorithm
+
 - [Big-O & Python 주요 연산 시간 복잡도](https://github.com/serothie/TIL/blob/main/python/210119.md)
+- [Brute Force Algorithm & Python Itertools](https://github.com/serothie/TIL/blob/main/algorhitm/210106.md)
+- [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
+- [Sieve of Eratosthenes, Divide and Conquer](https://github.com/serothie/TIL/blob/main/algorhitm/210115.md)
+
+### Data Structure
 
 ## Ⅲ. Linux
 
