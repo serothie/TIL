@@ -1,11 +1,14 @@
-# Python String Manipulation 1 : Valid Palindrome
+# Python String Manipulation
 
 ## Ⅰ. Introduction
 
 > - Python 문자열 조작
-> - [Valid Palindrome(leetcode #125)](https://leetcode.com/problems/valid-palindrome/)
+> - Valid Palindrome(leetcode #125)
+> - Reverse String(leetcode #344)
 
-## Ⅱ. 리스트로 변환하여 판단하기
+## Ⅱ. Valid Palindrome(leetcode #125)
+
+### 1. 리스트로 변환하여 판단하기
 
 ```python
 import typing
@@ -26,7 +29,7 @@ class Solution
 
 문제의 조건에 따라 대소문자 구분을 하지 않으며, 알파벳과 숫자만을 대상으로 하므로 `isalnum()` 및 `lower()` 을 통해 문자열을 판단 및 조작한다.
 
-## Ⅲ. 데크 자료형 활용하여 최적화하기
+### 2. 데크 자료형 활용하여 최적화하기
 
 ```python
 import typing
@@ -49,7 +52,7 @@ class Solution:
 
 리스트의 pop(0)는 O(n)의 시간 복잡도지만 데크의 popleft()는 O(1)의 시간 복잡도를 가지기 때문에 시간 복잡도를 개선할 수 있다.
 
-## Ⅳ. 정규 표현식 및 슬라이싱 활용
+### 3. 정규 표현식 및 슬라이싱 활용
 
 ```python
 import typing
@@ -62,3 +65,35 @@ class Solution:
 ```
 
 파이썬 정규 표현식 조작과 문자열 뒤집기 `[::-1]`로 펠린드롬 여부를 판단한다.
+
+## Ⅲ. Reverse String(leetcode #344)
+
+### 1. 포인터 적용 스왑
+
+```python
+from typing import List
+
+class Solution:
+    def reverse_string(self, s: List[str]) -> None:
+        left, right = 0, len()
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
+
+```
+
+left, right를 입력받는 리스트의 양 쪽 인덱스로 지정하고 점차 범위를 좁혀가며 스왑한다.
+
+### 2. 파이썬 내부 함수 활용
+
+```python
+from typing import List
+
+class Solution:
+    def reverse_string(self, s: List[str]) -> None:
+        s.reverse()
+        # s[:] = s[::-1]
+```
+
+`reverse` 를 이용해 공간 복잡도를 O(1)으로 제한하여 별도의 변수 할당 없이 처리 가능하다.
