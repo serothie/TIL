@@ -36,7 +36,7 @@
 - [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
 - [Sieve of Eratosthenes, Divide and Conquer](https://github.com/serothie/TIL/blob/main/algorhitm/210115.md)
 
-- [Python String Manipulation 1 : Palindrome](https://github.com/serothie/TIL/blob/main/algorhitm/210216.md)
+- [Python String Manipulation](https://github.com/serothie/TIL/blob/main/algorhitm/python%20string%20manipulation.md)
 
 ### Data Structure
 
