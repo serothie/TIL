@@ -5,6 +5,7 @@
 > - Python 문자열 조작
 > - Valid Palindrome(leetcode #125)
 > - Reverse String(leetcode #344)
+> - Reorder Log Files(leetcode #937)
 
 ## Ⅱ. Valid Palindrome(leetcode #125)
 
@@ -97,3 +98,25 @@ class Solution:
 ```
 
 `reverse` 를 이용해 공간 복잡도를 O(1)으로 제한하여 별도의 변수 할당 없이 처리 가능하다.
+
+## Ⅳ. Reorder Log Files(leetcode 937)
+
+### 1. 람다를 활용한 정렬
+
+```python
+from typing import List
+
+class Solution:
+    def reorder_log_files(self, logs: List[str]) -> List[str]:
+        letters, digits = list(), list()
+        for log in logs:
+            if log.split()[1].isdigit():
+                digits.append(log)
+            else:
+                letters.append(log)
+
+        letters.sort(key = lambda x: (x.split()[1:], x.split()[0]))
+        return letters + digits
+```
+
+문자와 숫자로 구성된 로그를 구분하여 서로 다른 리스트에 담는다. 문자로 이루어진 로그는 문자 로그를 우선으로, 식별자를 다음 순서로 하여 람다식을 활용해 정렬한다.
