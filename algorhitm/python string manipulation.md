@@ -99,7 +99,7 @@ class Solution:
 
 `reverse` 를 이용해 공간 복잡도를 O(1)으로 제한하여 별도의 변수 할당 없이 처리 가능하다.
 
-## Ⅳ. Reorder Log Files(leetcode 937)
+## Ⅳ. Reorder Log Files(leetcode #937)
 
 ### 1. 람다를 활용한 정렬
 
@@ -119,4 +119,37 @@ class Solution:
         return letters + digits
 ```
 
-문자와 숫자로 구성된 로그를 구분하여 서로 다른 리스트에 담는다. 문자로 이루어진 로그는 문자 로그를 우선으로, 식별자를 다음 순서로 하여 람다식을 활용해 정렬한다.
+문자와 숫자로 구성된 로그를 구분하여 서로 다른 리스트에 담는다. 문자로 이루어진 로그는 문자 로그를 우선으로, 식별자를 다음 순서로 하여 `lambda`식을 활용해 정렬한다.
+
+## Ⅴ. Most Common Word(leetcode #819)
+
+### 1. 카운터 활용
+
+```python
+from typing import List
+from collections import Counter
+import re
+
+class Solution:
+    def most_common_word(self, paragraph: str, banned: List[str]) -> str:
+        words = list(word for word in re.sub(r'[\w])', ' ', paragraph.lower().split() if word not in banned)
+
+    counts = Counter(words)
+    return counts.most_common(1)[0][0]
+```
+
+## Ⅵ. Group Anagrams(leetcode #49)
+
+### 1. 정렬 활용
+
+```python
+from typing import List
+from collections import defaultdict
+
+class Solution:
+    def group_anagrams(self, strs: List[str]) -> List[List(str)]:
+        anagrams = defaultdict(list)
+
+        for word in strs:
+            anagrams[''.join(sorted(word))].append(word)
+```
