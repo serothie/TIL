@@ -163,7 +163,7 @@ class Solution:
 
 ```python
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
+    def longest_palindrome(self, s: str) -> str:
         while left >= 0 and right <= len(s) and s[left] == s[right - 1]:
             left -= 1
             right += 1
