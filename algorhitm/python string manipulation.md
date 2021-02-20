@@ -6,6 +6,9 @@
 > - Valid Palindrome(leetcode #125)
 > - Reverse String(leetcode #344)
 > - Reorder Log Files(leetcode #937)
+> - Most Common Word(leetcode #819)
+> - Group Anagrams(leetcode #49)
+> - Longest Palindrome Substring(leetcode #5)
 
 ## Ⅱ. Valid Palindrome(leetcode #125)
 
@@ -152,4 +155,24 @@ class Solution:
 
         for word in strs:
             anagrams[''.join(sorted(word))].append(word)
+```
+
+## Ⅶ. Longest Palindrome Substring(leetcode #5)
+
+### 1. 투 포인터 풀이
+
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        while left >= 0 and right <= len(s) and s[left] == s[right - 1]:
+            left -= 1
+            right += 1
+        return s[left + 1:right - 1]
+
+    if len(s) < 2 or s == s[::-1]:
+        return s
+
+    result = ''
+    for index in range(len(s) - 1):
+        result = max(result, expand(i, i + 1), expand(i, i + 2), key = len)
 ```
