@@ -35,10 +35,11 @@
 - [Brute Force Algorithm & Python Itertools](https://github.com/serothie/TIL/blob/main/algorhitm/210106.md)
 - [Prefix Sum & Josephus Permutation](https://github.com/serothie/TIL/blob/main/algorhitm/210114.md)
 - [Sieve of Eratosthenes, Divide and Conquer](https://github.com/serothie/TIL/blob/main/algorhitm/210115.md)
-
 - [Python String Manipulation](https://github.com/serothie/TIL/blob/main/algorhitm/python%20string%20manipulation.md)
 
 ### Data Structure
+
+- [Linear Data Structure 1 : Array](https://github.com/serothie/TIL/blob/main/data%20structure/Array.md)
 
 ## Ⅲ. Linux
 
