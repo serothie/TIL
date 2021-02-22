@@ -59,25 +59,34 @@
 
 ## Ⅵ. Backend
 
-- [Flask 입문 1 : HTTP method, REST, URL building](https://github.com/serothie/TIL/blob/main/flask/210122.md)
-- [Flask 입문 2 : HTTP method, REST, URL building](https://github.com/serothie/TIL/blob/main/flask/210123.md)
-- [Flask 입문 3 : Flask & RDB with sqlite3](https://github.com/serothie/TIL/blob/main/flask/210123.md)
-- [Flask 입문 4 : Flask with SQLAlchemy](https://github.com/serothie/TIL/blob/main/flask/210127.md)
-- [Flask with MongoDB : 연동 및 구현](https://github.com/serothie/TIL/tree/main/flask/210130.md)
-- [REST API의 기본 설계 규칙](https://github.com/serothie/TIL/blob/main/flask/210129.md)
+### Flask
+
+- [Flask 입문 1 : HTTP method, REST, URL building](https://github.com/serothie/TIL/blob/main/backend/flask/210122.md)
+- [Flask 입문 2 : Rendering, Blueprint and Logging](https://github.com/serothie/TIL/blob/main/backend/flask/210123.md)
+- [Flask 입문 3 : Flask & RDB with sqlite3](https://github.com/serothie/TIL/blob/main/backend/flask/210123.md)
+- [Flask 입문 4 : Flask with SQLAlchemy](https://github.com/serothie/TIL/blob/main/backend/flask/210127.md)
+- [Flask with MongoDB : 연동 및 구현](https://github.com/serothie/TIL/tree/main/backend/flask/210130)
+
+### API
+
+- [REST API의 기본 설계 규칙](https://github.com/serothie/TIL/blob/main/backend/flask/210129.md)
+- [간단한 게시판 서비스를 위한 API 서버 구현](https://github.com/serothie/TIL/tree/main/backend/flask/210204)
 
 ## Ⅶ. Frontend
 
 ### React
 
-- [React 구동과 JSX, Element Readering](https://github.com/serothie/TIL/blob/main/react/210202.md)
-- [React Component & ES6 문법 알아보기](https://github.com/serothie/TIL/blob/main/react/210203.md)
-- [React Component / State & Props](https://github.com/serothie/TIL/blob/main/react/210205.md)
-- [React Event & Conditional Rendering](https://github.com/serothie/TIL/blob/main/react/210206.md)
-- [React Controlled Component, State 끌어올리기 및 Composition vs Inheritance](https://github.com/serothie/TIL/blob/main/react/210207.md)
-- [React Function Component & Hook](https://github.com/serothie/TIL/blob/main/react/210208.md)
-- [Redux with React - Action, Reducer, Store, Dispatch](https://github.com/serothie/TIL/blob/main/react/210209.md)
+- [React 구동과 JSX, Element Readering](https://github.com/serothie/TIL/blob/main/frontend/react/210202.md)
+- [React Component & ES6 문법 알아보기](https://github.com/serothie/TIL/blob/main/frontend/react/210203.md)
+- [React Component / State & Props](https://github.com/serothie/TIL/blob/main/frontend/react/210205.md)
+- [React Event & Conditional Rendering](https://github.com/serothie/TIL/blob/main/frontend/react/210206.md)
+- [React Controlled Component, State 끌어올리기 및 Composition vs Inheritance](https://github.com/serothie/TIL/blob/main/frontend/react/210207.md)
+- [React Function Component & Hook](https://github.com/serothie/TIL/blob/main/frontend/react/210208.md)
+
+### Bootstrap
+
+- [React Bootstrap - Grid, Layout & Contents](https://github.com/serothie/TIL/blob/main/frontend/bootstrap/210211.md)
 
 ### Redux
 
-- [React Bootstrap - Grid, Layout & Contents](https://github.com/serothie/TIL/blob/main/react/210211.md)
+- [Redux with React - Action, Reducer, Store, Dispatch](https://github.com/serothie/TIL/blob/main/frontend/redux/210209.md)
