@@ -69,8 +69,8 @@
 
 ### API
 
-- [REST API의 기본 설계 규칙](https://github.com/serothie/TIL/blob/main/backend/flask/210129.md)
-- [간단한 게시판 서비스를 위한 API 서버 구현](https://github.com/serothie/TIL/tree/main/backend/flask/210204)
+- [REST API의 기본 설계 규칙](https://github.com/serothie/TIL/blob/main/backend/api/210129.md)
+- [간단한 게시판 서비스를 위한 API 서버 구현](https://github.com/serothie/TIL/tree/main/backend/api/210204)
 
 ## Ⅶ. Frontend
 
