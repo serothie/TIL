@@ -90,3 +90,4 @@
 ### Redux
 
 - [Redux with React - Action, Reducer, Store, Dispatch](https://github.com/serothie/TIL/blob/main/frontend/redux/210209.md)
+- [React-Redux Component Structure](https://github.com/serothie/TIL/blob/main/frontend/redux/210222.md)
