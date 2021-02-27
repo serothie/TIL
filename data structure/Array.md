@@ -41,3 +41,31 @@ arr: List[int] = [3, 9, 20, 5, 17]
 ## Ⅲ. 관련 알고리즘 문제
 
 ### 1. Two Sum(leetcode #1)
+
+1. 브루트 포스
+
+```python
+from typing import List
+
+class Solution:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if num[i] + num[j] == target:
+                    return [i, j]
+```
+
+모든 조합을 더해서 하나하나 확인해보는 방식이다. 시간 복잡도가 크다는 단점이 있다.
+
+### 2. python `in`
+
+```python
+from typing import List
+
+class Solution:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
+        for index, number in enumerate(nums):
+            complement = target - number
+            if complement in nums[i + 1]:
+                return nums.index(number), nums[i + 1:].index(complement) + (i + 1)
+```
