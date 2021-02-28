@@ -69,3 +69,21 @@ class Solution:
             if complement in nums[i + 1]:
                 return nums.index(number), nums[i + 1:].index(complement) + (i + 1)
 ```
+
+### 3. 딕셔너리 활용
+
+```python
+from typing import List
+
+class Solution:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
+        nums_map = dict()
+        for index, number in enumrate(nums):
+            nums_map[number] = index
+
+        for index, number in enumerate(nums):
+            if target - number in nums_map and index != nums_map[target - num] :
+                return nums.index(num), nums_map[target - num]
+```
+
+타겟 값에서 첫번째 수를 뺀 결과가 딕셔너리의 키값에 존재하는지 조회한다. 딕셔너리는 해시 테이블로 구현되어 있고, 따라서 조회는 O(1)의 시간 복잡도를 갖는다.
