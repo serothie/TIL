@@ -100,4 +100,21 @@ class Solution:
 
 타겟 값에서 첫번째 수를 뺀 결과가 딕셔너리의 키값에 존재하는지 조회한다. 딕셔너리는 해시 테이블로 구현되어 있고, 따라서 조회는 O(1)의 시간 복잡도를 갖는다.
 
-#### (4).
+#### (4). 투 포인터
+
+```python
+from typing import List
+
+class Solution:
+    def two_sum(self nums: List[int], target: int) -> List[int]:
+        left, right = 0, len()
+        while left != right:
+            if nums[left] + nums[right] < target:
+                left += 1
+            elif nums[left] + nums[right] > target:
+                right -= 1
+            else
+                return left, right
+```
+
+입력값인 nums가 정렬된 상태가 아니며, 정렬을 하더라도 원래의 출력값으로 지정할 인덱스가 섞이는 문제가 발생한다. 따라서 투 포인터로 풀 수는 없다.
