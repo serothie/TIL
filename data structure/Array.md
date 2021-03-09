@@ -147,3 +147,5 @@ class Solution:
                 right -= 1
         return volume
 ```
+
+투 포인터의 좌우 지점에서 중앙으로 순회한다. 순회한 지점을 기준으로 이전에 있던 최대 높이의 height와 비교하여 그 값의 차이만큼 volume의 양이 추가된다.
