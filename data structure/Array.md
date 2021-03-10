@@ -109,7 +109,7 @@ from typing import List
 
 class Solution:
     def two_sum(self nums: List[int], target: int) -> List[int]:
-        left, right = 0, len()
+        left, right = 0, len() - 1
         while left != right:
             if nums[left] + nums[right] < target:
                 left += 1
@@ -149,3 +149,28 @@ class Solution:
 ```
 
 투 포인터의 좌우 지점에서 중앙으로 순회한다. 순회한 지점을 기준으로 이전에 있던 최대 높이의 height와 비교하여 그 값의 차이만큼 volume의 양이 추가된다.
+
+#### (2). 스택 활용
+
+```python
+from typing import List
+
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        stack = []
+        volume = 0
+
+        for i in range(len(height)):
+            while stack and height[i] > height[stack[-1]]:
+                bottom = stack.pop()
+                if not len(stack):
+                    break
+                distance = i - stack[-1] - 1
+                waters - min(height[i], height[stack[-1]]) - height[bottom]
+
+                volume += distance * waters
+            stack.append(i)
+        return volume
+```
+
+순회하며 stack에 인덱스를 담아둔다. stack에 담긴 마지막 높이(bottom)보다 큰 높이를 마주했을 때 bottom 이전의 기둥 높이와 비교하하여 더 작은 기둥의 높이와, 그 기둥간 거리 차이(인덱스 값 차이)를 volume에 더해준다.
