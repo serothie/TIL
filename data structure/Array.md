@@ -174,3 +174,109 @@ class Solution:
 ```
 
 순회하며 stack에 인덱스를 담아둔다. stack에 담긴 마지막 높이(bottom)보다 큰 높이를 마주했을 때 bottom 이전의 기둥 높이와 비교하하여 더 작은 기둥의 높이와, 그 기둥간 거리 차이(인덱스 값 차이)를 volume에 더해준다.
+
+### 3. 3Sum (leetcode #15)
+
+#### (1). 브루트 포스
+
+```python
+from typing import List
+
+class Solution:
+    def three_sum(self, nums: List[int]) -> List[List[int]]:
+        result = []
+        nums.sort()
+        for i in range(len(nums) - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            for j in range(i + 1, len(nums) - 1):
+                if j > i + 1 and nums[j] == nums[j - 1]:
+                    continue
+                for k in range(j + 1, len(nums)):
+                    if k > j + 1 and nums[k] == nums[k - 1]:
+                        continue
+                    if nums[i] + nums[j] + nums[k] == 0:
+                        result.append([nums[i], nums[j], nums[k]])
+        return result
+```
+
+브루트 포스로 풀이하되 중복된 값의 경우에는 `continue`를 통해 건너뛴다.
+
+### (2). 투 포인터
+
+```python
+from typing import List
+
+class Solution:
+    def three_sum(self, nums: List[int]) -> List[List[int]]:
+        result = []
+        nums.sort()
+        for i in range(len(nums) - 2):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+
+        left, right = i + 1, len(nums) - 1
+        while left < right:
+            sum = nums[i] + nums[left] + nums[right]
+            if sum < 0:
+                left += 1
+            elif sum > 0:
+                right -= 1
+            else:
+                result.append([nums[i], nums[left], nums[right]])
+                while left < right and nums[left] == nums[left + 1]:
+                    left += 1
+                while left < right and nums[right] == nums[right - 1]:
+                    right -= 1
+                left += 1
+                right -= 1
+
+        return result
+```
+
+첫번째 값은 기존대로 중복된 값을 건너뛰는 식으로 순회한다. 첫번째 값을 기준으로 나머지 두 값은 투 포인터로 처리한다. 합이 0인 조합을 찾은 뒤에는 투 포인터가 가리키는 나머지 두 값의 중복을 건너뛴 뒤 한 칸씩 좁혀 다음 조합을 탐색한다.
+
+### 4. Array Partition I (leetcode #561)
+
+#### (1). 정렬 이용
+
+```python
+from collections import List
+
+class Solution:
+    def array_pair_sum(self, nums: List[int]) -> int:
+        result = 0
+        pair_list = list()
+        nums.sort()
+        for num in nums:
+            pair_list.append(num)
+            if len(pair) == 2:
+                result += min(pair_list)
+                pair_list = list()
+        return result
+```
+
+```python
+from collections import List
+
+class Solution:
+    def array_pair_sum(self, nums: List[int]) -> int:
+        result = 0
+        nums.sort()
+        for index, num in enumerate(nums):
+            if index % 2 == 0:
+                result += num
+        return result
+```
+
+전방에서 순회하여 2개씩 페어를 만든뒤 최소값을 결과값에 더해나간다. 또는 짝수 번째 값만을 결과값에 더해나간다.
+
+#### (2). 스텝 인덱싱(숏 코딩)
+
+```python
+from collections import List
+
+class Solution:
+    def array_pair_sum(self, nums: List[int]) -> int:
+        return sum(sorted(nums[::2]))
+```
