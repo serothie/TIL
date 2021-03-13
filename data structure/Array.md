@@ -280,3 +280,60 @@ class Solution:
     def array_pair_sum(self, nums: List[int]) -> int:
         return sum(sorted(nums[::2]))
 ```
+
+### 5. Product of Array Except Self(leetcode #238)
+
+#### (1). 인덱스별 좌우 곱으로 계산
+
+```python
+from typing import List
+
+class Solution:
+    def product_except_self(self, nums: List[int]) -> List[int]:
+        result = list()
+        product = 1
+        for i in range(0, len(nums)):
+            result.append(pointer)
+            pointer = pointer * nums[i]
+        product = 1
+        for i in range(len(nums) - 1, -1, -1):
+            result[i] = result[i] * pointer
+            pointer = pointer * nums[i]
+        return result
+```
+
+result 배열에 각 인덱스를 기준으로 왼쪽 값들의 곱을 넣은 뒤, 다시 오른쪽 값들의 곱을 곱하여 결과를 구한다.
+
+### 6. Best Time to Buy and Sell Stock(leetcode #121)
+
+#### (1). 브루트 포스
+
+```python
+from typing import List
+
+class Solution:
+    def max_profit(self, prices: List[int]) -> int:
+        max_price = 0
+        for i, price in enumerate(prices):
+            for j in range(i, len(prices)):
+                max_price = max(max_price, prices[j] - price)
+        return max_price
+```
+
+#### (2). 최소값과 최대값을 구한 뒤 계산
+
+```python
+from typing import List
+from sys import maxsize
+
+class Solution:
+    def max_profit(self, prices: List[int]) -> int:
+        min_price = -maxsize
+        profit = 0
+        for price in prices:
+            min_price = min(min_price, price)
+            profit = max(profit, price-min_price)
+        return profit
+```
+
+각 지점마다 최소값을 갱신하고 이를 통해 해당 지점에서의 이익의 최대값을 갱신한다.
