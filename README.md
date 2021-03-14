@@ -40,6 +40,7 @@
 ### Data Structure
 
 - [Linear Data Structure 1 : Array](https://github.com/serothie/TIL/blob/main/data%20structure/Array.md)
+- [Linear Data Structure 2 : Linked List](https://github.com/serothie/TIL/blob/main/data%20structure/LinkedList.md)
 
 ## Ⅲ. Linux
 
