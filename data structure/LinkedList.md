@@ -79,7 +79,7 @@ class Solution:
 
 일반적인 리스트에서 `pop(0)`가 O(n)의 시간 복잡도를 갖는데 비해, 데크 자료형을 활용하면 자료의 시작과 끝 양방향에서 O(1)의 시간 복잡도로 자료 추출이 가능하다.
 
-### (3). 런너 기법
+#### (3). 런너 기법
 
 ```python
 from typing import List
@@ -110,3 +110,24 @@ class Solution:
 
 런너를 활용해 fast 런너가 끝 지점에 도달했을 때 slow 런너는 중간 지점까지 이동하게 하며 역순 연결 리스트 reverse를 만들어 나간다. 이후 slow 런너 연결 리스트의 남은 값과 reverse 연결 리스트의 값을 비교해나간다.
 slow와 reverse의 비교가 끝 지점까지 완료가 되었다면, 즉 둘 다 None 값을 가질 때까지 while문이 진행되었다면 펠린드롬이고, 그렇지 않다면 중간에 비교가 중단되었으니 펠린드롬이 아니라는 의미이다.
+
+### 2. Merge Two Sorted Lists (leetcode #14)
+
+#### (1). 재귀 풀이
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def merge_two_lists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if (not l1) or (l2 and l1.val > l2.val):
+            l1, l2 = l2, l1
+        if l1:
+            l1.next = self.merge_two_lists(l1.next, l2)
+        return l1
+```
+
+두 연결 리스트 중 더 작은 head 값을 가지는 연결 리스트를 `l1`으로 둔 뒤에, `l1` 연결 리스트의 남은 부분과 다른 연결 리스트 `l2`를 재귀 구조로 엮는다. 기저 조건 두번째 if문으로 병합 대상인 두 연결 리스트의 값이 모두 None 값인 경우이다. 최종적으로 병합된 `l1`을 리턴한다.
