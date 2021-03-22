@@ -64,16 +64,16 @@ class Solution:
 
         if not head:
             return True
-        
+
         node = head
         while node:
-            q.append(node.val)        
+            q.append(node.val)
             node = node.next
 
         while len(q) > 0:
             if q.popleft() != q.pop():
                 return False
-        
+
         return True
 ```
 
@@ -88,7 +88,7 @@ class ListNode:
     def __init__(self, val = 0, next = None):
         self.val = val
         self.next = next
-    
+
 class Solution:
     def is_palindrome(self, head: ListNode) -> bool:
         reverse = None
@@ -100,7 +100,7 @@ class Solution:
             slow = slow.next
         if fast:
             slow = slow.next
-        
+
         while reverse and reverse.val == slow.val:
             slow = slow.next
             reverse = reverse.next
@@ -131,3 +131,25 @@ class Solution:
 ```
 
 두 연결 리스트 중 더 작은 head 값을 가지는 연결 리스트를 `l1`으로 둔 뒤에, `l1` 연결 리스트의 남은 부분과 다른 연결 리스트 `l2`를 재귀 구조로 엮는다. 기저 조건 두번째 if문으로 병합 대상인 두 연결 리스트의 값이 모두 None 값인 경우이다. 최종적으로 병합된 `l1`을 리턴한다.
+
+### 3. Reverse Linked List
+
+### (1). 재귀 풀이
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def reverse_list(self, head: ListNode) -> ListNode:
+        def reverse(node: ListNode, prev: ListNode = None):
+            if not node:
+                return prev
+            next, node.next = node.next, prev
+            return reverse(next, node)
+        return reverse(head)
+```
+
+현재 노드 값과 다음 노드 값을 뒤집는 함수를 재귀 호출한다. 기저 조건은 노드값이 None이 될 때까지로 정한다.
