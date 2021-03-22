@@ -149,7 +149,29 @@ class Solution:
                 return prev
             next, node.next = node.next, prev
             return reverse(next, node)
+
         return reverse(head)
 ```
 
 현재 노드 값과 다음 노드 값을 뒤집는 함수를 재귀 호출한다. 기저 조건은 노드값이 None이 될 때까지로 정한다.
+
+### (2). 반복문 풀이
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def reverse_list(self, head: ListNode) -> ListNode:
+        node, prev = head, None
+
+        while node:
+            next, node.next = node.next, prev
+            prev, node = node, next
+
+        return prev
+```
+
+재귀 풀이를 반복문으로 구현한 것이다. 재귀 풀이에 비해 적은 공간복잡도를 가지며 이해하기 편하다.
