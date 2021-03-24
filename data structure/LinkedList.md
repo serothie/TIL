@@ -175,3 +175,34 @@ class Solution:
 ```
 
 재귀 풀이를 반복문으로 구현한 것이다. 재귀 풀이에 비해 적은 공간복잡도를 가지며 이해하기 편하다.
+
+### 4. Add Two Numbers (leetcode #2)
+
+#### (1). 전가산기 구현
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def add_two_numbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        root = head = ListNode(0)
+
+        carry = 0
+        while l1 or l2 or carry:
+            sum = 0
+            if l1:
+                sum += l1.val
+                l1 = l1.next
+            if l2:
+                sum += l2.val
+                l2 = l2.next
+
+            carry, value = divmod(sum + carry, 10)
+            head.next = ListNode(value)
+            head = head.next
+```
+
+자료형을 전환할 필요없이 각 연결 리스트의 값들을 더하여 carry와 sum으로 나누어 가며 새로운 연결 리스트를 엮어 나가는 풀이이다.
