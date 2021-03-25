@@ -206,3 +206,72 @@ class Solution:
 ```
 
 자료형을 전환할 필요없이 각 연결 리스트의 값들을 더하여 carry와 sum으로 나누어 가며 새로운 연결 리스트를 엮어 나가는 풀이이다.
+
+### 5. Swap Nodes in Pairs (leetcode #24)
+
+#### (1). 한 쌍씩 값 교환
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def swap_pairs(self, head: ListNode) -> ListNode:
+        cur = head
+
+        while cur and cur.next:
+            cur.val, cur.next.val = cur.next.val, cur.val
+            cur = cur.next.next
+
+        return head
+```
+
+매우 직관적인 방법으로 한쌍의 페어가 있다면 단순히 값을 교환하고 다다음 노드로 이동하기를 반복한다.
+
+#### (2). 반복 구조
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def swap_pairs(self, head: ListNode) -> ListNode:
+        root = prev = ListNode(None)
+        prev.next = head
+        while head and head.next:
+            b = head.next
+            head.next = b.next
+            b.next = head
+
+            prev.next = b
+
+            head = head.next
+            prev = prev.next.next
+        return root.next
+```
+
+두 페어의 첫 값(`head`)의 다음을 `b`로 정의하여 스왑한다. `head`를 가리키던 `prev`는 `b`를 가리키도록 한 뒤 다음 번 페어로 나아간다.
+
+#### (3). 재귀 구조
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def swap_pairs(self, head: ListNode) -> ListNode:
+        if head and head.next:
+            pointer = head.next
+            head.next = self.swap_pairs(pointer.next)
+            pointer.next = head
+            return pointer
+        return head
+```
+
+`head`와 `pointer`를 스왑한 뒤 `head`의 `next`는 다음 페어를 재귀 구조로 엮는다. 기저 조건은 남은 값들로 페어가 이루어지지 않는 경우이다. `pointer` 이외의 변수 할당이 없어 공간 복잡도를 개선할 수 있다.
