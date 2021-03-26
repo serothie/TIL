@@ -275,3 +275,32 @@ class Solution:
 ```
 
 `head`와 `pointer`를 스왑한 뒤 `head`의 `next`는 다음 페어를 재귀 구조로 엮는다. 기저 조건은 남은 값들로 페어가 이루어지지 않는 경우이다. `pointer` 이외의 변수 할당이 없어 공간 복잡도를 개선할 수 있다.
+
+### 6. Odd Even Linked List (leetcode #328)
+
+#### (1). 반복 구조
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def odd_even_list(self, head: ListNode) -> ListNode:
+        if head is None:
+            return None
+
+        odd = head
+        even = head.next
+        even_head = head.next
+
+        while even and even.next:
+            odd.next, even.next = odd.next.next, even.next.next
+            odd, even = odd.next, even.next
+
+        odd.next = even_head
+        return head
+```
+
+홀수 번째와 짝수 번째의 첫 헤드를 지정하고, 홀수 연결 리스트 뒤에 짝수 연결 리스트를 연결하기 위해 첫 짝수 번째 헤드를 미리 변수 `even_head`에 담아둔다. 반복 구조로 홀짝 연결 리스트를 각각 만든 뒤 홀수 연결 리스트 뒤에 짝수 연결 리스트를 이어 마무리한다.
