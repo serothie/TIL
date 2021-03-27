@@ -304,3 +304,31 @@ class Solution:
 ```
 
 홀수 번째와 짝수 번째의 첫 헤드를 지정하고, 홀수 연결 리스트 뒤에 짝수 연결 리스트를 연결하기 위해 첫 짝수 번째 헤드를 미리 변수 `even_head`에 담아둔다. 반복 구조로 홀짝 연결 리스트를 각각 만든 뒤 홀수 연결 리스트 뒤에 짝수 연결 리스트를 이어 마무리한다.
+
+### 7. Reverse Linked List Ⅱ (leetcode #92)
+
+```python
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def reverse_between(self, m: int, n: int) -> ListNode:
+        if not head or m == n:
+            return head
+
+        root = start = ListNode(None)
+        root.next = head
+
+        for _ in range(m-1):
+            start = start.next
+        end = start.next
+
+        for _ in range(n-m):
+            tmp, start.next, end.next = start.next, end.next, end.next.next
+            start.next.next = tmp
+        return root.next
+```
+
+반복해서 차례대로 노드를 뒤집는다. `end`는 뒤집은 연결 리스트의 꼬리 값으로 미리 정해둔다. `tmp`는 뒤집을 노드의 인덱스 `m`부터 `n`까지 차례대로 나아가며 `start`의 `next`로 지정되는데, 이를 `end`의 `next`로 순차적으로 연결하는 것이다. 또한 `end`의 `next`는 `end.next.next`로 끌어와서 최종적으로 `end`가 가르킬 노드로 연결된다.
