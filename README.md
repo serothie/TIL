@@ -99,4 +99,4 @@
 - [Data Analysis with Python Ⅰ - Numpy](https://github.com/serothie/TIL/blob/main/data%20analysis/210329.md)
 - [Data Analysis with Python Ⅱ - Pandas 기본](https://github.com/serothie/TIL/blob/main/data%20analysis/210330.md)
 - [Data Analysis with Python Ⅲ - Pandas 심화](https://github.com/serothie/TIL/blob/main/data%20analysis/210331.md)
-- [Data Analysis with Python Ⅳ - Matplotlib](https://github.com/serothie/TIL/blob/main/data%20analysis/210401.md)
+- [Data Analysis with Python Ⅳ - Matplotlib](https://github.com/serothie/TIL/blob/main/data%20analysis/210401/210401.md)
