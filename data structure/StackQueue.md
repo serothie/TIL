@@ -16,11 +16,28 @@
 
 ## Ⅲ. 관련 알고리즘 문제 - Stack
 
-### 1.
+### 1. Valid Parentheses
 
+```python
+class Solution:
+    def is_valid(self, s: str) -> bool:
+        stack = list()
+        parenthesis_table = {
+            ')' : '(',
+            ']' : '[',
+            '}' : '{'
+        }
+
+        for char in s:
+            if char not in parenthesis_table:
+                stack.append(char)
+            elif not stack or parenthesis_table[char] != stack.pop():
+                return False
+
+        return len(stack) == 0
 ```
 
-```
+왼쪽 괄호는 stack에 담아두고 오른쪽 괄호를 만나면 스택에서 pop 연산을 수행한다. pop 연산의 결과물과 다음 괄호와의 괄호 쌍이 맞지 않으면 False를 리턴한다.
 
 ### 2.
 
