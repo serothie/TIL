@@ -41,6 +41,7 @@
 
 - [Linear Data Structure 1 : Array](https://github.com/serothie/TIL/blob/main/data%20structure/Array.md)
 - [Linear Data Structure 2 : Linked List](https://github.com/serothie/TIL/blob/main/data%20structure/LinkedList.md)
+- [Linear Data Structure 3 : Stack & Queue](https://github.com/serothie/TIL/blob/main/data%20structure/StackQueue.md)
 
 ## Ⅲ. Linux
 
