@@ -57,6 +57,29 @@ class Solution:
 
 우선 사전 순으로 판단하기 위해 `sorted(set(s))` 문자열에 반복문으로 시작한다. 문자열의 각 문자로 시작하는 `suffix`를 분리하여 `set(s)`와 비교하여 일치한다면, 해당 suffix에 담고자 하는 모든 문자들이 담겨있다는 의미이다. 이 경우 해당 suffix에서 첫 문자와, 첫 문자를 제거한 문자열을 재귀 구조로 엮는다.
 
+#### (2). 스택 활용
+
+```python
+from collections import Counter
+
+class Solution:
+    def remove_duplicate_letters(self, s: str) -> str:
+        counter, checked, stack = Counter(s), set(), list()
+
+        for char in s:
+            counter[char] -= 1
+            if char in checked:
+                continue
+            while stack and char < stack[-1] and counter[stack[-1]] > 0:
+                checked.remove(stack.pop())
+            stack.append(char)
+            checked.add(char)
+
+        return ''.join(stack)
+```
+
+`stack`과 `checked`에 문자열의 문자를 차례대로 쌓는다. `stack`에 문자열이 담겨있고, 다음에 쌓을 문자가 `stack`의 마지막 문자보다 사전순이 빠르며, `stack`의 마지막 문자가 더 남아있다면 이를 제거한다. 이 과정에서 `checked`에 담긴 문자는 건너뛴다.
+
 ### 3.
 
 ```
