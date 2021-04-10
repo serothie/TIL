@@ -80,11 +80,27 @@ class Solution:
 
 `stack`과 `checked`에 문자열의 문자를 차례대로 쌓는다. `stack`에 문자열이 담겨있고, 다음에 쌓을 문자가 `stack`의 마지막 문자보다 사전순이 빠르며, `stack`의 마지막 문자가 더 남아있다면 이를 제거한다. 이 과정에서 `checked`에 담긴 문자는 건너뛴다.
 
-### 3.
+### 3. Daily Temperatures (leetcode #739)
+
+```python
+from typing import List
+
+class Solution:
+    def daily_temperatures(self, T: List[int]) -> List[int]:
+        answer = [0 for i in range(len(T))]
+        stack = list()
+
+        for index, current in enumerate(T):
+            while stack and current > T[stack[-1]]:
+                last = stack.pop()
+                answer[last] = index - last
+            stack.append(i)
+
+        return answer
 
 ```
 
-```
+`stack`에 인덱스 값을 차례 차례 쌓는다. 다음에 쌓일 인덱스의 값이 `stack`의 마지막 인덱스의 값보다 큰 경우, `stack`에 `pop` 연산을 하여 다음 인덱스 값의 차이만큼 결과 값을 저장한다.
 
 ### 2.
 
