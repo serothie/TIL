@@ -82,6 +82,8 @@ class Solution:
 
 ### 3. Daily Temperatures (leetcode #739)
 
+#### (1). 스택 활용
+
 ```python
 from typing import List
 
@@ -102,11 +104,32 @@ class Solution:
 
 `stack`에 인덱스 값을 차례 차례 쌓는다. 다음에 쌓일 인덱스의 값이 `stack`의 마지막 인덱스의 값보다 큰 경우, `stack`에 `pop` 연산을 하여 다음 인덱스 값의 차이만큼 결과 값을 저장한다.
 
-### 2.
+## Ⅳ. 관련 알고리즘 문제 - Queue
+
+### 4. Implement Stack using Queues(leetcode #225)
+
+```python
+class My_stack:
+    def __init__(self):
+        self.q = collections.deque()
+
+    def push(self, x):
+        self.q.append(x)
+        for _ in range(len(self.q) - 1):
+            self.q.append(self.q.popleft())
+
+    def pop(self):
+        return self.q.popleft()
+
+    def top(self):
+        return self.q[0]
+
+    def empty(self):
+        return len(self.q) == 0
 
 ```
 
-```
+`Queue`의 FIFO 연산만 활용하여 스택 연산을 구현한다. 추가된 요소를 맨 앞으로 두어 `pop`연산이 맨 앞의 요소를 가져올 수 있도록 한다.
 
 ## Ⅳ. 관련 알고리즘 문제 - Queue
 
