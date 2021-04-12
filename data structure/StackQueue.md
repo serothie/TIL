@@ -106,7 +106,7 @@ class Solution:
 
 ## Ⅳ. 관련 알고리즘 문제 - Queue
 
-### 4. Implement Stack using Queues(leetcode #225)
+### 1. Implement Stack using Queues(leetcode #225)
 
 ```python
 class My_stack:
@@ -131,13 +131,32 @@ class My_stack:
 
 `Queue`의 FIFO 연산만 활용하여 스택 연산을 구현한다. 추가된 요소를 맨 앞으로 두어 `pop`연산이 맨 앞의 요소를 가져올 수 있도록 한다.
 
-## Ⅳ. 관련 알고리즘 문제 - Queue
+### 2. Implement Queue using Stacks(leetcode #232)
 
-### 1.
+```python
+class My_queue:
+    def __init__(self):
+        self.input = list()
+        self.output = list()
 
+    def push(self, x):
+        self.input.append(x)
+
+    def pop(self):
+        self.peek()
+        return self.output.pop()
+
+    def peek(self):
+        if not self.output:
+            while self.input:
+                self.output.append(self.input.pop())
+        return self.output[-1]
+
+    def empty(self):
+        return self.input == list() and self.output == list()
 ```
 
-```
+`Stack`의 LIFO 연산을 활용하여 큐의 연산을 구현한다. `append` 연산은 `input` 리스트에서, `pop`과 `peek`연산은 `output` 리스트에서 `스택의 pop` 연산을 활용해 큐를 구현하였다.
 
 ### 2
 
