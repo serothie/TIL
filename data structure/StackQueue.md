@@ -158,14 +158,43 @@ class My_queue:
 
 `Stack`의 LIFO 연산을 활용하여 큐의 연산을 구현한다. `append` 연산은 `input` 리스트에서, `pop`과 `peek`연산은 `output` 리스트에서 `스택의 pop` 연산을 활용해 큐를 구현하였다.
 
-### 2
+### 3. Design Circular Queue (leetcode #622)
 
+```python
+class My_circular_queue:
+    def __init__(self, k: int):
+        self.q = [None] * k
+        self.maxlen = k
+        self.p1 = 0
+        self.p2 = 0
+
+    def enQueue(self, value: int) -> bool:
+        if self.q[self.p2] is None:
+            self.q[self.p2] = value
+            self.p2 = (self.p2 + 1) % self.maxlen
+            return True
+        else:
+            return False
+
+    def deQueue(self) -> bool:
+        if self.q[self.p1] is None:
+            return False
+        else:
+            self.q[self.p1] = None
+            self.p1 = (self.p1 + 1) % self.maxlen
+            return True
+
+    def Front(self) -> int:
+        return -1 if self.q[self.p1] is None else self.q[self.p1]
+
+    def Rear(self) -> int:
+        return -1 if self.q[self.p2 - 1] is None else self.q[self.p2 - 1]
+
+    def isEmpty(self) -> bool:
+        return self.p1 == self.p2 and self.q[self.p1] is None
+
+    def isFull(self) -> bool:
+        return self.p1 == self.p2 and self.q[self.p1] is not None
 ```
 
-```
-
-## Ⅴ. 결론
-
-```
-
-```
+마지막 위치의 데이터가 시작 위치와 연결되는 원형 큐이다. `deQueue`를 통해 시작 위치의 데이터가 빠지는 경우 시작 점을 다음 위치로 이동시켜 공간을 모두 활용하는 구조이다. 원에서 포인터 2개 `(p1, p2)`가 돌면서 데이터의 시작점과 끝점을 지정한다.
