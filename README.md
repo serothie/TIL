@@ -21,13 +21,19 @@
 
 ## Ⅱ. Python, Algorithm & Data Structure
 
+### 참고
+
+```
+1. 파이썬 알고리즘 인터뷰(https://github.com/serothie/algorithm-interview)
+2. 코딩 인터뷰 완전분석(https://github.com/careercup/CtCI-6th-Edition)
+```
+
 ### Python
 
 - [Python 기초 프로그래밍 1 : 기본 문법 보충 정리](https://github.com/serothie/TIL/blob/main/python/210116.md)
 - [Python 기초 프로그래밍 2 : 함수, 클래스, 정규표현식](https://github.com/serothie/TIL/blob/main/python/210117.md)
 - [Python Crawling 1 : 크롤링 기초](https://github.com/serothie/TIL/blob/main/python/210118.md)
 - [Python Crawling 2 : 코로나, 주가 데이터 크롤링](https://github.com/serothie/TIL/commit/468116c4fe82c1dbd632eb111a7d2831a6083fa8)
-- [Python String Manipulation]()
 
 ### Algorithm
 
@@ -42,6 +48,7 @@
 - [Linear Data Structure 1 : Array](https://github.com/serothie/TIL/blob/main/data%20structure/Array.md)
 - [Linear Data Structure 2 : Linked List](https://github.com/serothie/TIL/blob/main/data%20structure/LinkedList.md)
 - [Linear Data Structure 3 : Stack & Queue](https://github.com/serothie/TIL/blob/main/data%20structure/StackQueue.md)
+- [Linear Data Structure 4 : Deque & Priority Queue](https://github.com/serothie/TIL/blob/main/data%20structure/DequePriorityQueue.md)
 
 ## Ⅲ. Linux
 
