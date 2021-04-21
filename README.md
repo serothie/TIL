@@ -49,6 +49,7 @@
 - [Linear Data Structure 2 : Linked List](https://github.com/serothie/TIL/blob/main/data%20structure/LinkedList.md)
 - [Linear Data Structure 3 : Stack & Queue](https://github.com/serothie/TIL/blob/main/data%20structure/StackQueue.md)
 - [Linear Data Structure 4 : Deque & Priority Queue](https://github.com/serothie/TIL/blob/main/data%20structure/DequePriorityQueue.md)
+- [Linear Data Structure 5 : Hash Table](https://github.com/serothie/TIL/tree/main/data%20structure)
 
 ## Ⅲ. Linux
 
