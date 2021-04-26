@@ -23,10 +23,8 @@
 
 ### 참고
 
-```
-1. 파이썬 알고리즘 인터뷰(https://github.com/serothie/algorithm-interview)
-2. 코딩 인터뷰 완전분석(https://github.com/careercup/CtCI-6th-Edition)
-```
+> 1. [python algorithm interview](https://github.com/serothie/algorithm-interview)
+> 2. [cracking the coding interview](https://github.com/careercup/CtCI-6th-Edition)
 
 ### Python
 
@@ -51,7 +49,7 @@
 - [Linear Data Structure 4 : Deque & Priority Queue](https://github.com/serothie/TIL/blob/main/data%20structure/DequePriorityQueue.md)
 - [Linear Data Structure 5 : Hash Table](https://github.com/serothie/TIL/tree/main/data%20structure)
 
-- [Non-Linear Data Structure 1 : Graph]()
+- [Non-Linear Data Structure 1 : Graph](https://github.com/serothie/TIL/blob/main/data%20structure/Graph.md)
 
 ## Ⅲ. Linux
 
