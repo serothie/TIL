@@ -109,3 +109,7 @@
 - [Data Analysis with Python Ⅱ - Pandas 기본](https://github.com/serothie/TIL/blob/main/data%20analysis/210330.md)
 - [Data Analysis with Python Ⅲ - Pandas 심화](https://github.com/serothie/TIL/blob/main/data%20analysis/210331.md)
 - [Data Analysis with Python Ⅳ - Matplotlib](https://github.com/serothie/TIL/blob/main/data%20analysis/210401/210401.md)
+
+## Ⅹ. Machine Learning
+
+- [Deep Learning Ⅰ - Perceptron](https://github.com/serothie/TIL/blob/main/machine%20learning/210427.md)
