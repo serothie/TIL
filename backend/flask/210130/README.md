@@ -83,3 +83,7 @@ def get():
         error = "Could not find that netflix"
         return render_template('main.html', error=error)
 ```
+
+```
+출처: [엘리스 AI 트랙 1기](https://aitrack.elice.io/)
+```

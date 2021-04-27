@@ -124,3 +124,7 @@ lineTo로 이동하며 연결된 좌표로도 moveTo와 같이 새로운 path가
 
 > 1. 공식 문서를 참고하여 다양한 그림 기능을 구현해볼 수 도 있을 듯 하다.
 > 1. CSS 활용 전체 레이아웃 및 디자인 개선
+
+</br>
+
+출처: [노마드코더 클론코딩](https://nomadcoders.co/?gclid=Cj0KCQjwyZmEBhCpARIsALIzmnIHuVc0EDdM0eo_oXDK2QDMtxzyIxzea1l8mhfDC6agvSup21e0M8YaAigZEALw_wcB)

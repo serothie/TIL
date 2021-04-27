@@ -24,3 +24,7 @@
    1. RecentBoardArticle API : 모든 게시판에 대해 각각의 게시판의 가장 최근 _n_ 개의 게시판 글의 _title_ 을 가져옵니다. (_k_ 개의 게시판이 있다면 최대 _k _ n* 개의 게시판 글의 *title\* 을 반환합니다.)
 
 ## 실행 방법 : python app.py
+
+```
+출처: [엘리스 AI 트랙 1기](https://aitrack.elice.io/)
+```
