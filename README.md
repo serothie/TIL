@@ -116,3 +116,4 @@
 - [Deep Learning Ⅱ - TensorFlow](https://github.com/serothie/TIL/blob/main/machine%20learning/210428.md)
 - [Deep Learning Ⅲ - Problems](https://github.com/serothie/TIL/blob/main/machine%20learning/210430.md)
 - [Natural language processing Ⅰ - Perceptron](https://github.com/serothie/TIL/blob/main/machine%20learning/210504.md)
+- [Natural language processing Ⅱ - Perceptron](https://github.com/serothie/TIL/blob/main/machine%20learning/210505.md)
