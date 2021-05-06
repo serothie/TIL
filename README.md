@@ -116,3 +116,4 @@
 - [Deep Learning Ⅲ - Problems](https://github.com/serothie/TIL/blob/main/machine%20learning/210430.md)
 - [Natural language processing Ⅰ - Perceptron](https://github.com/serothie/TIL/blob/main/machine%20learning/210504.md)
 - [Natural language processing Ⅱ - Perceptron](https://github.com/serothie/TIL/blob/main/machine%20learning/210505.md)
+- [Natural Language Processing Ⅲ - Korean NLP](https://github.com/serothie/TIL/blob/main/machine%20learning/210506.md)
